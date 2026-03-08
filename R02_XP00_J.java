@@ -1,5 +1,5 @@
-# Rule 02: Expressions (EXP)
-# XP00-J: Do not ignore valued returned by methods. Given the noncompliant code below:
+// Rule 02: Expressions (EXP)
+// XP00-J: Do not ignore valued returned by methods. Given the noncompliant code below:
 public void deleteFile(){
 
   File someFile = new File("someFileName.txt");
@@ -7,7 +7,7 @@ public void deleteFile(){
 someFile.delete();
 }
 
-# Correct the code shown in the Compliant Solution below:
+// Correct the code shown in the Compliant Solution below:
 public void deleteFile(){
 
   File someFile = new File("someFileName.txt");
