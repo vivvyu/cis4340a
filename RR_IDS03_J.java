@@ -1,12 +1,12 @@
-# Rule 00: Input Validation and Data Sanitization (IDS)
-# IDSS03-J: Do not log unsanitized user input. Given the non-complaint code below:
+// Rule 00: Input Validation and Data Sanitization (IDS)
+// IDSS03-J: Do not log unsanitized user input. Given the non-complaint code below:
 if (loginSuccessful) {
   logger.severe("User login succeeded for: " + username);
 } else {
   logger.severe("User login failed for: " + username);
 }
 
-# Correct the code shown in the Complaint Solution below:
+// Correct the code as shown in the Compliant Solution below:
 if (loginSuccessful) {
   logger.severe("User login succeeded for: " + sanitizeUser(username));
 } else {
@@ -43,3 +43,4 @@ class SanitizedTextLogger extends Logger {
 
   // .. Other Logger methods which must also sanitize their log messages
 }
+
